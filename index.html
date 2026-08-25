@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ホーム | リバーシオン</title>
+<style>
+:root{--bg:#F4F1E8;--panel:#fff;--line:#DDD8CB;--tx:#16211F;--tx2:#5C6B69;--acc:#2E8F8A}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#101A1A;--panel:#1A2726;--line:#2B3B39;--tx:#E8EFEE;--tx2:#9AAAA8;--acc:#4FC3BC}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);line-height:1.85;
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  padding:0 20px 80px}
+.wrap{max-width:760px;margin:0 auto}
+header.site{padding:26px 0;border-bottom:1px solid var(--line);margin-bottom:36px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header.site .logo{width:44px;height:44px;border-radius:22.37%;flex:none;overflow:hidden}
+header.site .logo svg{display:block;width:100%;height:100%}
+header.site .name{font-weight:700;font-size:17px;letter-spacing:-.01em}
+header.site nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+header.site nav a{font-size:13px;font-weight:600;text-decoration:none;color:var(--tx2);
+  padding:6px 12px;border-radius:8px;border:1px solid var(--line)}
+header.site nav a:hover{color:var(--tx)}
+header.site nav a[aria-current="page"]{background:var(--acc);color:#fff;border-color:transparent}
+main{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:40px 44px}
+h1{font-size:27px;font-weight:700;letter-spacing:-.01em;margin-bottom:6px;line-height:1.4}
+h2{font-size:18px;font-weight:700;margin:38px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+h2:first-of-type{border-top:none;padding-top:0}
+h3{font-size:15px;font-weight:700;margin:24px 0 6px}
+p,ul,ol{margin:12px 0;font-size:14.5px}
+ul,ol{padding-left:1.5em}
+li{margin:5px 0}
+strong{font-weight:700}
+em{color:var(--tx2);font-style:normal;font-size:13.5px}
+hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:16px 0}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;color:var(--tx2);font-weight:700}
+a{color:var(--acc)}
+code{background:rgba(128,128,128,.14);padding:1px 5px;border-radius:4px;font-size:.9em}
+footer.site{margin-top:34px;font-size:12.5px;color:var(--tx2);text-align:center}
+.lead{font-size:15px;color:var(--tx2);margin:14px 0 26px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:20px 22px;margin:14px 0}
+.card h3{margin-top:0}
+.todo{background:rgba(240,160,32,.14);border-left:3px solid #F0A020;
+  border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0;font-size:13.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <span class="logo"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+<rect width="1024" height="1024" fill="#3AA6A0"/>
+<clipPath id="lg"><ellipse cx="660" cy="430" rx="118" ry="232"/></clipPath>
+<g clip-path="url(#lg)">
+<rect x="542" y="198" width="236" height="464" fill="#FAF7F0"/>
+<rect x="542" y="198" width="162.84" height="464" fill="#16161A"/>
+<rect x="704.84" y="198" width="14" height="464" fill="#B9B2A2"/></g>
+<ellipse cx="591.59" cy="390.4" rx="22.26" ry="61.6" fill="#FAF7F0"/>
+<ellipse cx="660.41" cy="390.4" rx="22.26" ry="61.6" fill="#FAF7F0"/>
+<ellipse cx="591.59" cy="397" rx="10.02" ry="27.72" fill="#16161A"/>
+<ellipse cx="660.41" cy="397" rx="10.02" ry="27.72" fill="#16161A"/>
+<ellipse cx="626" cy="518" rx="17.2" ry="50.6" fill="#FAF7F0"/>
+<circle cx="330" cy="672" r="196" fill="#FAF7F0"/>
+<circle cx="271.2" cy="640.64" r="25.48" fill="#16161A"/>
+<circle cx="388.8" cy="640.64" r="25.48" fill="#16161A"/>
+<path d="M 267.28 715.12 Q 330 789.6 392.72 715.12" stroke="#16161A" stroke-width="25.48" fill="none" stroke-linecap="round"/>
+</svg></span>
+    <span class="name">リバーシオン<br><span style="font-weight:400;font-size:12px;color:var(--tx2)">Reversion</span></span>
+    <nav><a href="index.html" aria-current="page">ホーム</a><a href="support.html">サポート</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
+  </header>
+  <main>
+<h1>リバーシオン</h1>
+<p class="lead">オンラインで対戦できるリバーシ。相手が見つからないときは CPU が相手をするので、待たされることがありません。</p>
+<div class="card"><h3>主な機能</h3>
+<ul>
+<li>オンラインでの対人対戦（レーティング・ランキングつき）</li>
+<li>相手が見つからない場合は CPU 対戦へ自動移行</li>
+<li>CPU は 5 段階のレベルから選択可能</li>
+<li>合言葉でプライベートルームを作り、友人と対局</li>
+<li>広告なし・アプリ内課金なし・完全無料</li>
+</ul></div>
+<div class="todo"><strong>公開前チェック:</strong> App Store のダウンロードリンク、スクリーンショット、リリース日を追記してください。</div>
+<h2>ドキュメント</h2>
+<ul>
+<li><a href="privacy.html">プライバシーポリシー</a></li>
+<li><a href="terms.html">利用規約</a></li>
+<li><a href="support.html">サポート・お問い合わせ</a></li>
+</ul>
+</main>
+  <footer class="site">© Hideki Games</footer>
+</div>
+</body>
+</html>
